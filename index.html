@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  
+  <title>catch me</title>
+</head>
+<body>
+    <div class="before">
+        <div class="textco">
+            This game is like a guessing game. Your job is to predict which box the cat is hiding in, and click on that box. If you get it right, you get a point.
+            YOU HAVE ONLY 15 chances.!
+        </div>
+        <div class="start">
+            <button id="startbtn">START</button>
+            LOADING...
+        </div>
+    </div>
+<div class="alertbox">
+    <p>choose a username...</p>
+    <h3></h3>
+    <input type="text" id="userInput" style="opacity:0;">
+</div>
+<div class="wrapper">
+<div class="info">
+    <h4 id="user"></h4>
+    <p id="highScore"><span>high Score:-</span><span id="hs"></span></p>
+    <p id="score"><span>score:-</span><span id="s"></span></p>
+</div>
+<div class="container">
+	<div class="box"><img src="cat.jpg" class="child" alt="child" ></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<video id="bg" src="boxbg.mp4" loop autoplay autobuffer></video>
+</div>
+<div class="buttom"></div>
+</div>
+<div class="over">
+    <p class="overtext" >game over</p>
+    <h4 class="overuser"></h4>
+    <div class="ttscore">
+        <div class="yscore">
+            <h3></h3>
+            <p>your score</p>
+        </div>
+        <div class="tscore">
+            <h3></h3>
+            <p>highest score</p>
+        </div>
+    </div>
+    <button class="rbtn">replay</button>
+</div>
+    <audio id="bgs" src="s1.mp3" autoplay loop autobuffer></audio>
+    <audio id="wrong" src="w.mp3"></audio>
+    <audio id="end" src="end.mp3"></audio>
+    <audio src="r.mp3" id="right"></audio>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+.*{
+    margin: 0;
+    padding: 0;
+}
+
+audio{
+    display: none;
+}
+.before{
+    height: 100%;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: .7s all;
+}
+
+.textco{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.start{
+    color: white;
+}
+.start button{
+    display: none;
+    width: 60px;
+    height: 50px;
+}
+
+.alertbox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    transition: .2s all;
+    height: 100%;
+    background: rgba(7,20,100,1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.alertbox h3{
+    color: white;
+    font-family: Courier;
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: 2px;
+}
+.alertbox p{
+    color: red;
+    font-size: 22px;
+    line-height: 2px;
+    text-shadow: 0 0 3px yellow;
+}
+
+.info{
+    display: flex;
+    background: white;
+    height: 4%;
+    width: 100%;
+    padding: 1px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.info h4, .info p{
+    margin: 7px;
+}
+
+.buttom{
+    padding: 1px;
+    display: flex;
+    background: white;
+    height: 4%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.counter{
+    z-index: 4;
+    width:50px;
+    height: 95%px;
+    background: green;
+    margin: 2px;
+}
+.wrapper{
+    height: 95vh;
+   // display: flex;
+    width: 100%;
+}
+
+.container{
+    background: black;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 85%;
+    padding: 1px;
+    flex-wrap: wrap;
+    flex: 1, auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    background: yellow;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid red;
+    box-shadow: 0 0 5px blue;
+    z-index: 2;
+    margin: 2px;
+    width: 150px;
+    height: 100px;
+    flex: 1, auto;
+}
+
+.child{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display: none;
+}
+body{
+    background: url("../back.jpg");
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 100vh;
+    width: 100%;
+}
+#bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.over{
+    display: flex;
+    //display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 9;
+    transition: .2s all;
+}
+.overtext{
+    color: grey;
+    font-family: Verdana;
+    font-size: 22px;
+  //  line-height: 2px;
+    padding: 0;
+    margin-top: 2px;
+    text-shadow: 1px 1px black;
+}
+.overuser{
+    color: red;
+    font-family: Verdana;
+    font-size: 22px;
+   // line-height: 2px;
+    line-height: 0;
+    padding: 0;
+    margin: 20px 0;
+    text-shadow: 1px 1px yellow;
+}
+
+.ttscore{
+    width: 90%;
+    height: auto;
+    display: flex;
+    border: 2px solid white;
+    box-shadow: 1px 1px yellow, 2px 2px red, -1px -1px yellow, -2px -2px red;
+    justify-content: center;
+}
+.yscore{
+    width: 46%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.yscore h3{
+    margin: 0;
+    color: grey;
+    font-family: Verdana;
+    font-size: 22px;
+    text-shadow: 1px 1px black;
+}
+
+.yscore p{
+    text-shadow: 1px 1px yellow;
+    color: red;
+}
+
+.tscore{
+    width: 46%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tscore h3{
+    margin: 0;
+    color: grey;
+    font-family: Verdana;
+    font-size: 22px;
+    text-shadow: 1px 1px black;
+}
+
+.tscore p{
+    text-shadow: 1px 1px yellow;
+    color: red;
+}
+
+.rbtn{
+    margin-top: 50px;
+    height: 50px;
+    width: 50%;
+    border: 2px solid red;
+    box-shadow: 1px 1px yellow, 2px 2px red, -1px -1px yellow, -2px -2px red;
+}
+@media screen(min-width=600px){
+    .wrapper{
+        display: flex;
+    }
+}
+
